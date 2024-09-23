@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Karla:wght@200;300;400;500&family=Montserrat+Alternates:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/9d9796826b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-gift" style="margin-right: 6%;"></i>Fashion</a>
+            <a href="#shopping-cart" style="color: mediumblue;">
+                <i class="fa-solid fa-cart-shopping justify-content-end fa-xl"></i>(<span id="cart-count">0</span>)
+            </a>
+        </div>
+    </nav>
+
+    <section id="category">
+        <div class="container-fluid">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://cdn.shopify.com/s/files/1/0259/7103/2124/files/web-layouting1_336x.progressive.jpg?v=1614325580.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://cdn.shopify.com/s/files/1/0259/7103/2124/files/web-layouting2_336x.progressive.jpg?v=1614325580.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://cdn.shopify.com/s/files/1/0259/7103/2124/files/web-layouting4_336x.progressive.jpg?v=1614325580.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://cdn.shopify.com/s/files/1/0259/7103/2124/files/web-layouting3_336x.progressive.jpg?v=1614325580.png" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Scroll to Top Button -->
+        <a href="#category" class="up-icon">
+            <i class="fa-solid fa-circle-chevron-up"></i>
+        </a>
+    
+        <!-- Filter Buttons -->
+        <div class="filter-btns">
+            <a href="index.html"><button type="button" class="filter-btn" id="refresh"><i class="fa-solid fa-rotate"></i> Refresh</button></a>
+            <button type="button" class="filter-btn" id="all">All</button>
+            <button type="button" class="filter-btn" id="new">New</button>
+            <button type="button" class="filter-btn" id="office-wear">Office Wear</button>
+            <button type="button" class="filter-btn" id="t-shirts">T-Shirts</button>
+            <button type="button" class="filter-btn" id="offers">Offers</button>
+        </div>
+
+    <!-- Product Cards -->
+    <section id="product-cards">
+        <div class="container-fluid">
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <!-- Card 1 -->
+                <div class="col filter-item all new">
+                    <div class="card h-100">
+                        <img src="https://cdn.shopify.com/s/files/1/0259/7103/2124/products/37_6d0b5acc-19fa-407e-96eb-7956f12be496_271x.progressive.jpg?v=1679547745.png" class="card-img-top shop-item-image" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title shop-item-title">Vneck Side Pockets Elegant Mustard Dress</h5>
+                            <p class="card-text shop-item-price">Rs 500.00</p>
+                            <button type="button" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col filter-item all new">
+                    <div class="card h-100">
+                        <img src="https://cdn.shopify.com/s/files/1/0259/7103/2124/products/29_f59e4f13-7baa-4324-a68c-1a00abb27c7b_270x.jpg" class="card-img-top shop-item-image" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title shop-item-title">Halter Neck Mini Printed Dress</h5>
+                            <p class="card-text shop-item-price">Rs 499.00</p>
+                            <button type="button" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col filter-item all new">
+                    <div class="card h-100">
+                        <img src="https://cdn.shopify.com/s/files/1/0259/7103/2124/products/33_db15b682-a4bd-40b8-ab24-bde7f5419ede_270x.jpg" class="card-img-top shop-item-image" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title shop-item-title">Vneck Half Sleeve Printed Dress</h5>
+                            <p class="card-text shop-item-price">Rs 350.00</p>
+                            <button type="button" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col filter-item all new">
+                    <div class="card h-100">
+                        <img src="https://cdn.shopify.com/s/files/1/0259/7103/2124/products/64web_271x.progressive.jpg?v=1679551696.png" class="card-img-top shop-item-image" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title shop-item-title">Vneck Cold Shoulder Mini Dress</h5>
+                            <p class="card-text shop-item-price">Rs 590.00</p>
+                            <button type="button" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col filter-item all office-wear">
+                    <div class="card h-100">
+                        <img src="https://cdn.shopify.com/s/files/1/0259/7103/2124/products/45_b16d32b0-68c7-4189-b4cd-b986f927aaf6_271x.progressive.jpg?v=1677146174.png" class="card-img-top shop-item-image" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title shop-item-title">Tow Tone Waistless Pleated Dress</h5>
+                            <p class="card-text shop-item-price">Rs 500.00</p>
+                            <button type="button" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="shopping-cart">
+        <div class="container-fluid">
+            <h2>Your Cart</h2>
+            <ul id="cart-items" class="list-group">
+                <!-- Cart items will be dynamically generated here -->
+            </ul>
+            <div id="cart-total-container">
+                <h4>Total: <span id="cart-total">Rs 0.00</span></h4>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
